@@ -24,7 +24,7 @@ requirements:
     - python
     - pandas
     - httplib2
-    - google-api-python-client  # [not py36]
+    - google-api-python-client
     - oauth2client
 
 test:
