@@ -1,6 +1,6 @@
-{% set version = "0.2.1" %}
+{% set version = "0.3.0" %}
 {% set name = "pandas-gbq" %}
-{% set sha256 = "dd9359fed8ae09066158c812796a03d2c4536701ffe809b6d8cfa95373f26274" %}
+{% set sha256 = "b82a61aee408b349ba2a5725fc29d3d2fa33ed0be0a77d31ac1e07676401d0a0" %}
 
 package:
   name: {{ name|lower }}
@@ -24,9 +24,9 @@ requirements:
   run:
     - python
     - pandas
-    - httplib2
-    - google-api-python-client
-    - oauth2client
+    - google-auth >=1.0.1
+    - google-auth-oauthlib >=0.0.1
+    - google-cloud-bigquery >=0.28.0
 
 test:
   imports:
