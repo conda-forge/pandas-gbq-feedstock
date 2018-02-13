@@ -1,6 +1,6 @@
-{% set version = "0.3.0" %}
+{% set version = "0.3.1" %}
 {% set name = "pandas-gbq" %}
-{% set sha256 = "b82a61aee408b349ba2a5725fc29d3d2fa33ed0be0a77d31ac1e07676401d0a0" %}
+{% set sha256 = "d1054c684c7348149f182ec682868cfac1ef1d60b87e1e0c6e61c76f8f237a73" %}
 
 package:
   name: {{ name|lower }}
@@ -26,7 +26,7 @@ requirements:
     - pandas
     - google-auth >=1.0.1
     - google-auth-oauthlib >=0.0.1
-    - google-cloud-bigquery >=0.28.0
+    - google-cloud-bigquery >=0.29.0
 
 test:
   imports:
