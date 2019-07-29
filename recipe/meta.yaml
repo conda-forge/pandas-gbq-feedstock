@@ -1,6 +1,6 @@
-{% set version = "0.10.0" %}
+{% set version = "0.11.0" %}
 {% set name = "pandas-gbq" %}
-{% set sha256 = "96fa2777873fafea5da29ac88c5670846a73c5308b751ab7adfeb00ad8207103" %}
+{% set sha256 = "73bffdc116b4b3f8371dc4c50a619b53db19bb90941dd00668a9a5f520659bfb" %}
 
 package:
   name: {{ name|lower }}
@@ -13,8 +13,8 @@ source:
 
 build:
   number: 0
-  noarch: python
   script: python -m pip install --no-deps --ignore-installed .
+  skip: True  # [py2k]
 
 requirements:
   build:
@@ -37,6 +37,7 @@ test:
 about:
   home: https://github.com/pydata/pandas-gbq
   license: BSD 3-clause
+  license_file: LICENSE.txt
   summary: 'Pandas interface to Google Big Query'
 
   doc_url: http://pandas-gbq.readthedocs.io
