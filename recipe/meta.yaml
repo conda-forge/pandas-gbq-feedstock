@@ -1,6 +1,6 @@
-{% set version = "0.11.0" %}
+{% set version = "0.12.0" %}
 {% set name = "pandas-gbq" %}
-{% set sha256 = "73bffdc116b4b3f8371dc4c50a619b53db19bb90941dd00668a9a5f520659bfb" %}
+{% set sha256 = "c24beb52352f01d095e7f2627b94a6fd603a81d663ead91d9100903817aadc4b" %}
 
 package:
   name: {{ name|lower }}
@@ -12,8 +12,8 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 1
-  script: python -m pip install --no-deps --ignore-installed .
+  number: 0
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
   skip: True  # [py2k]
 
 requirements:
