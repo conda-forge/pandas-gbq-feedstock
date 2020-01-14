@@ -7,7 +7,7 @@ Package license: BSD 3-clause
 
 Feedstock license: BSD 3-Clause
 
-Summary: Pandas interface to Google Big Query
+Summary: Pandas interface to Google BigQuery
 
 
 
@@ -198,6 +198,7 @@ Feedstock Maintainers
 =====================
 
 * [@jreback](https://github.com/jreback/)
+* [@leahecole](https://github.com/leahecole/)
 * [@parthea](https://github.com/parthea/)
 * [@tswast](https://github.com/tswast/)
 
