@@ -12,7 +12,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . --no-deps -vv
   skip: True  # [py2k]
 
@@ -38,7 +38,7 @@ about:
   home: https://github.com/pydata/pandas-gbq
   license: BSD 3-clause
   license_file: LICENSE.txt
-  summary: 'Pandas interface to Google Big Query'
+  summary: 'Pandas interface to Google BigQuery'
 
   doc_url: http://pandas-gbq.readthedocs.io
   dev_url: https://github.com/pydata/pandas-gbq
@@ -46,5 +46,6 @@ about:
 extra:
   recipe-maintainers:
     - jreback
+    - leahecole
     - parthea
     - tswast
