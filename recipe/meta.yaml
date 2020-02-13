@@ -15,14 +15,13 @@ build:
   noarch: python
   number: 0
   script: {{ PYTHON }} -m pip install . --no-deps -vv
-  skip: True  # [py2k]
 
 requirements:
   build:
     - pip
 
   run:
-    - python
+    - python >=3.5.0
     - setuptools
     - pandas >=0.19.0
     - pydata-google-auth
