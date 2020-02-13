@@ -12,18 +12,18 @@ source:
   sha256: {{ sha256 }}
 
 build:
+  noarch: python
   number: 0
   script: {{ PYTHON }} -m pip install . --no-deps -vv
   skip: True  # [py2k]
 
 requirements:
   build:
-    - python
-    - setuptools
     - pip
 
   run:
     - python
+    - setuptools
     - pandas >=0.19.0
     - pydata-google-auth
     - google-auth >=1.0.1
@@ -31,8 +31,13 @@ requirements:
     - google-cloud-bigquery >=1.11.0
 
 test:
+  requires:
+    - python
+    - pip
   imports:
     - pandas_gbq
+  commands:
+    - python -m pip check
 
 about:
   home: https://github.com/pydata/pandas-gbq
