@@ -1,6 +1,6 @@
-{% set version = "0.13.1" %}
+{% set version = "0.13.2" %}
 {% set name = "pandas-gbq" %}
-{% set sha256 = "b394aa388e6229cd4fe652709cc02597c6fa2e336e2ab973d35cc58635370b0b" %}
+{% set sha256 = "bc3a615c92df76490be33ae1efe60e82b8affd196e39f4f6c9c76d67c32e3d46" %}
 
 package:
   name: {{ name|lower }}
@@ -42,7 +42,7 @@ about:
   home: https://github.com/pydata/pandas-gbq
   license: BSD 3-clause
   license_file: LICENSE.txt
-  summary: 'Pandas interface to Google BigQuery'
+  summary: Pandas interface to Google BigQuery
 
   doc_url: http://pandas-gbq.readthedocs.io
   dev_url: https://github.com/pydata/pandas-gbq
