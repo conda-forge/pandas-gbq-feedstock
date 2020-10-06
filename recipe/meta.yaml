@@ -23,11 +23,13 @@ requirements:
   run:
     - python >=3.5.0
     - setuptools
-    - pandas >=0.19.0
+    - pandas >=0.20.1
     - pydata-google-auth
     - google-auth >=1.0.1
     - google-auth-oauthlib >=0.0.1
-    - google-cloud-bigquery >=1.11.0,<2.0.0dev
+    - google-cloud-bigquery >=1.11.0,<3.0.0dev
+  run_constrained:
+    - tqdm >=4.23.0
 
 test:
   requires:
