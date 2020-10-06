@@ -27,7 +27,7 @@ requirements:
     - pydata-google-auth
     - google-auth >=1.0.1
     - google-auth-oauthlib >=0.0.1
-    - google-cloud-bigquery >=1.11.0
+    - google-cloud-bigquery >=1.11.0,<2.0.0dev
 
 test:
   requires:
