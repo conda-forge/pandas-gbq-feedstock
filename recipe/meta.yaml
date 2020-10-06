@@ -1,6 +1,6 @@
-{% set version = "0.13.3" %}
 {% set name = "pandas-gbq" %}
-{% set sha256 = "d96b7fd29021892ba55a6d094e8f9ceb1973a5e72b819d0a01b26f12e132a205" %}
+{% set version = "0.14.0" %}
+{% set sha256 = "a7d7850bf649209227c367f1f99692a3b63f3c2c38f29c2a00fcd62ff1e2e2ff" %}
 
 package:
   name: {{ name|lower }}
@@ -23,11 +23,13 @@ requirements:
   run:
     - python >=3.5.0
     - setuptools
-    - pandas >=0.19.0
+    - pandas >=0.20.1
     - pydata-google-auth
     - google-auth >=1.0.1
     - google-auth-oauthlib >=0.0.1
-    - google-cloud-bigquery >=1.11.0,<2.0.0dev
+    - google-cloud-bigquery >=1.11.0,<3.0.0dev
+  run_constrained:
+    - tqdm >=4.23.0
 
 test:
   requires:
