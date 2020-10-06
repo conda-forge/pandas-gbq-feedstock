@@ -1,6 +1,6 @@
-{% set version = "0.13.2" %}
+{% set version = "0.13.3" %}
 {% set name = "pandas-gbq" %}
-{% set sha256 = "bc3a615c92df76490be33ae1efe60e82b8affd196e39f4f6c9c76d67c32e3d46" %}
+{% set sha256 = "d96b7fd29021892ba55a6d094e8f9ceb1973a5e72b819d0a01b26f12e132a205" %}
 
 package:
   name: {{ name|lower }}
@@ -27,7 +27,7 @@ requirements:
     - pydata-google-auth
     - google-auth >=1.0.1
     - google-auth-oauthlib >=0.0.1
-    - google-cloud-bigquery >=1.11.0
+    - google-cloud-bigquery >=1.11.0,<2.0.0dev
 
 test:
   requires:
@@ -40,7 +40,7 @@ test:
 
 about:
   home: https://github.com/pydata/pandas-gbq
-  license: BSD 3-clause
+  license: BSD-3-Clause
   license_file: LICENSE.txt
   summary: Pandas interface to Google BigQuery
 
