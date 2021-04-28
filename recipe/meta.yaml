@@ -21,9 +21,9 @@ requirements:
     - pip
 
   run:
-    - python >=3.5.0
+    - python >=3.7.0
     - setuptools
-    - pandas >=0.20.1
+    - pandas >=0.23.2
     - pydata-google-auth
     - google-auth >=1.0.1
     - google-auth-oauthlib >=0.0.1
