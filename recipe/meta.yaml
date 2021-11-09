@@ -23,7 +23,9 @@ requirements:
   run:
     - python >=3.7.0
     - setuptools
+    - numpy >=1.16.6
     - pandas >=0.23.2
+    - pyarrow >=3.0.0,<7.0dev
     - pydata-google-auth
     - google-auth >=1.0.1
     - google-auth-oauthlib >=0.0.1
@@ -41,13 +43,13 @@ test:
     - python -m pip check
 
 about:
-  home: https://github.com/pydata/pandas-gbq
+  home: https://github.com/googleapis/python-bigquery-pandas
   license: BSD-3-Clause
   license_file: LICENSE.txt
   summary: Pandas interface to Google BigQuery
 
-  doc_url: http://pandas-gbq.readthedocs.io
-  dev_url: https://github.com/pydata/pandas-gbq
+  doc_url: https://googleapis.dev/python/pandas-gbq/latest/index.html
+  dev_url: https://github.com/googleapis/python-bigquery-pandas
 
 extra:
   recipe-maintainers:
