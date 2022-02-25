@@ -1,7 +1,7 @@
 About pandas-gbq
 ================
 
-Home: https://github.com/pydata/pandas-gbq
+Home: https://github.com/googleapis/python-bigquery-pandas
 
 Package license: BSD-3-Clause
 
@@ -9,9 +9,9 @@ Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pandas-gbq-feed
 
 Summary: Pandas interface to Google BigQuery
 
-Development: https://github.com/pydata/pandas-gbq
+Development: https://github.com/googleapis/python-bigquery-pandas
 
-Documentation: http://pandas-gbq.readthedocs.io
+Documentation: https://googleapis.dev/python/pandas-gbq/latest/index.html
 
 Current build status
 ====================
