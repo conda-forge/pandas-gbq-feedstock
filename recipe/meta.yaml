@@ -1,6 +1,6 @@
 {% set name = "pandas-gbq" %}
-{% set version = "0.17.1" %}
-{% set sha256 = "9f6c10e31d3832cd14c81db8f993617e61af35edafa599465375f79be6112d4c" %}
+{% set version = "0.17.2" %}
+{% set sha256 = "d6d88090eedfb188ea6275d8812ff0cb876754e168760bd446b8d0fe242eae52" %}
 
 package:
   name: {{ name|lower }}
@@ -26,12 +26,12 @@ requirements:
     - db-dtypes >=0.3.1,<2.0.0dev
     - numpy >=1.16.6
     - pandas >=0.24.2
-    - pyarrow >=3.0.0,<7.0dev
+    - pyarrow >=3.0.0,<8.0dev
     - pydata-google-auth
     - google-api-core >=1.21.0
     - google-auth >=1.18.0
     - google-auth-oauthlib >=0.0.1
-    - google-cloud-bigquery >=1.27.2,<4.0.0dev
+    - google-cloud-bigquery >=1.27.2,<4.0.0dev,!=2.4.*
     - google-cloud-bigquery-storage >=1.1.0,<3.0.0dev
   run_constrained:
     - tqdm >=4.23.0
