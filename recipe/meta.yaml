@@ -1,6 +1,6 @@
 {% set name = "pandas-gbq" %}
-{% set version = "0.17.6" %}
-{% set sha256 = "a950733f181252c9eade18e6622dde0689b58e5c5cad59bd7c6d3e0198b03c36" %}
+{% set version = "0.17.8" %}
+{% set sha256 = "5d5329e8834dff49c148b6367686fb2d008a3214ad68e403574801e120337d84" %}
 
 package:
   name: {{ name|lower }}
