@@ -1,6 +1,6 @@
 {% set name = "pandas-gbq" %}
-{% set version = "0.17.7" %}
-{% set sha256 = "c02568ad346afa6f0d3ddc5d6dbc1b8d73cc2b6dd60f9b7a3b2fce2bb757f814" %}
+{% set version = "0.17.8" %}
+{% set sha256 = "5d5329e8834dff49c148b6367686fb2d008a3214ad68e403574801e120337d84" %}
 
 package:
   name: {{ name|lower }}
@@ -26,7 +26,7 @@ requirements:
     - db-dtypes >=0.3.1,<2.0.0dev
     - numpy >=1.16.6
     - pandas >=0.24.2
-    - pyarrow >=3.0.0,<9.0dev
+    - pyarrow >=3.0.0,<10.0dev
     - pydata-google-auth
     - google-api-core >=1.31.5,<3.0.0dev,!=2.0.*,!=2.1.*,!=2.2.*,!=2.3.0
     - google-auth >=1.25.0
