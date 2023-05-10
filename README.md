@@ -1,11 +1,11 @@
-About pandas-gbq
-================
+About pandas-gbq-feedstock
+==========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pandas-gbq-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/googleapis/python-bigquery-pandas
 
 Package license: BSD-3-Clause
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pandas-gbq-feedstock/blob/main/LICENSE.txt)
 
 Summary: Pandas interface to Google BigQuery
 
@@ -147,6 +147,7 @@ In order to produce a uniquely identifiable distribution:
 Feedstock Maintainers
 =====================
 
+* [@chalmerlowe](https://github.com/chalmerlowe/)
 * [@jreback](https://github.com/jreback/)
 * [@leahecole](https://github.com/leahecole/)
 * [@parthea](https://github.com/parthea/)
