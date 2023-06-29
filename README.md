@@ -151,4 +151,5 @@ Feedstock Maintainers
 * [@leahecole](https://github.com/leahecole/)
 * [@parthea](https://github.com/parthea/)
 * [@tswast](https://github.com/tswast/)
+* [@chalmerlowe](https://github.com/chalmerlowe)
 
