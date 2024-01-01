@@ -1,29 +1,27 @@
 {% set name = "pandas-gbq" %}
-{% set version = "0.19.2" %}
-{% set sha256 = "b0f7fa84a2be0fe767e33a008ca7e4ad9a9e3ac67255fd0a41fc19b503138447" %}
+{% set version = "0.20.0" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  fn: {{ name }}-{{ version }}.tar.gz
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: {{ sha256 }}
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pandas-gbq-{{ version }}.tar.gz
+  sha256: 5710fea855ce4118511f613018aff973dff121a8dc35bca21cc10262d66592eb
 
 build:
   noarch: python
+  script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
   number: 0
-  script: python -m pip install . --no-deps -vv
 
 requirements:
-  build:
+  host:
+    - python >=3.7
     - pip
-
   run:
-    - python >=3.7.0
+    - python >=3.7
     - setuptools
-    - db-dtypes >=1.0.4,<2.0.0dev
+    - db-dtypes >=1.0.4,<2.0.0
     - numpy >=1.16.6
     - pandas >=1.1.4
     - pyarrow >=3.0.0
@@ -31,19 +29,19 @@ requirements:
     - google-api-core >=2.10.2,<3.0.0dev
     - google-auth >=2.13.0
     - google-auth-oauthlib >=0.7.0
-    - google-cloud-bigquery >=3.3.5,<4.0.0dev
+    - google-cloud-bigquery-core >=3.3.5,<4.0.0dev,!=2.4.*
     - google-cloud-bigquery-storage >=2.16.2,<3.0.0dev
+    - packaging >=20.0.0
   run_constrained:
     - tqdm >=4.23.0
 
 test:
-  requires:
-    - python
-    - pip
   imports:
     - pandas_gbq
   commands:
-    - python -m pip check
+    - pip check
+  requires:
+    - pip
 
 about:
   home: https://github.com/googleapis/python-bigquery-pandas
