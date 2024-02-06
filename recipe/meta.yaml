@@ -1,5 +1,5 @@
 {% set name = "pandas-gbq" %}
-{% set version = "0.20.0" %}
+{% set version = "0.21.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pandas-gbq-{{ version }}.tar.gz
-  sha256: 5710fea855ce4118511f613018aff973dff121a8dc35bca21cc10262d66592eb
+  sha256: f9c137430d34059f380af6c37781334d0be0a16021a8bdbf2836687e50ab63af
 
 build:
   noarch: python
@@ -29,7 +29,7 @@ requirements:
     - google-api-core >=2.10.2,<3.0.0dev
     - google-auth >=2.13.0
     - google-auth-oauthlib >=0.7.0
-    - google-cloud-bigquery-core >=3.3.5,<4.0.0dev,!=2.4.*
+    - google-cloud-bigquery-core >=3.3.5,<4.0.0dev
     - google-cloud-bigquery-storage >=2.16.2,<3.0.0dev
     - packaging >=20.0.0
   run_constrained:
