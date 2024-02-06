@@ -29,7 +29,7 @@ requirements:
     - google-api-core >=2.10.2,<3.0.0dev
     - google-auth >=2.13.0
     - google-auth-oauthlib >=0.7.0
-    - google-cloud-bigquery-core >=3.3.5,<4.0.0dev,!=2.4.*
+    - google-cloud-bigquery-core >=3.3.5,<4.0.0dev
     - google-cloud-bigquery-storage >=2.16.2,<3.0.0dev
     - packaging >=20.0.0
   run_constrained:
