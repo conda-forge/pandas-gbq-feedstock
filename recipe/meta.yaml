@@ -1,5 +1,5 @@
 {% set name = "pandas-gbq" %}
-{% set version = "0.26.1" %}
+{% set version = "0.27.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/pandas_gbq-{{ version }}.tar.gz
-  sha256: 8c5a4478ca822e857bcc853a5e8999273a147ffffbc44a38dde93fd9c4f240bb
+  sha256: 6c19b1d84bc43ba8c54e30b9fc7c120755b5b3cf6c0c0f46fdef09bc244f3222
 
 build:
   noarch: python
